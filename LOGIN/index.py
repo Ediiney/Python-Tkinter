@@ -69,7 +69,7 @@ def Register():
         User = UserEntry.get()
         Pass = PassEntry.get()
         DataBaser.cursor.execute("""
-        INSERT INTO User (Name, Email, User, Password) 
+        INSERT INTO User (Name, Email, Users, Pass) 
         VALUES (?, ?, ?, ?)
         """,(Name, Email, User, Pass))
         DataBaser.conn.commit()
